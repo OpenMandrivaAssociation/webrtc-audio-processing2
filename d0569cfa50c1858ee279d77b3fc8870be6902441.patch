@@ -1,0 +1,26 @@
+From d0569cfa50c1858ee279d77b3fc8870be6902441 Mon Sep 17 00:00:00 2001
+From: Arun Raghavan <arun@arunraghavan.net>
+Date: Mon, 10 Nov 2025 09:57:54 -0800
+Subject: [PATCH] examples: Use 48 kHz by default
+
+More sensible default for anyone using this as a reference.
+---
+ examples/run-offline.cpp | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/examples/run-offline.cpp b/examples/run-offline.cpp
+index 3a8e15d..b58afee 100644
+--- a/examples/run-offline.cpp
++++ b/examples/run-offline.cpp
+@@ -17,7 +17,7 @@
+ #include <webrtc/modules/audio_processing/include/audio_processing.h>
+ 
+ #define DEFAULT_BLOCK_MS 10
+-#define DEFAULT_RATE 32000
++#define DEFAULT_RATE 48000
+ #define DEFAULT_CHANNELS 1
+ 
+ int main(int argc, char **argv) {
+-- 
+GitLab
+
