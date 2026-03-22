@@ -77,6 +77,7 @@ WebRTC implements the W3C's proposal for video conferencing on the web.
 
 %build
 %meson  \
+        -Dcpp_std=c++20 \
 %ifnarch aarch64
         -Dneon=disabled
 %endif
