@@ -19,7 +19,9 @@ Patch3:        65bea7a0b167509703dbf841a4e2192d6fd659e6.patch
 Patch4:        fe8f3672377ccfdbfceecd0bc09d8e5f51187f96.patch
 Patch5:        a260b2e8b9ca00119eb6c683121d5c40e040bce6.patch
 Patch6:        e9c78dc4712fa6362b0c839ad57b6b46dce1ba83.patch
-#
+# OpenSuse
+Patch7:        https://build.opensuse.org/projects/openSUSE:Factory/packages/webrtc-audio-processing/files/fix-build.patch
+
 BuildRequires:	meson
 BuildRequires:	abseil-cpp-devel
 
