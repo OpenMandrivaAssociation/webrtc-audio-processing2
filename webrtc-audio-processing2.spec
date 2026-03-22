@@ -65,7 +65,10 @@ WebRTC implements the W3C's proposal for video conferencing on the web.
 %autosetup -n webrtc-audio-processing-v%{version} -p1
 
 %build
-%meson
+%meson  \
+%ifnarch aarch64
+        -Dneon=disabled
+%endif
 %meson_build
 
 %install
